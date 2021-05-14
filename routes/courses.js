@@ -111,7 +111,7 @@ router.put("/posts/:id", (req, res) => {
       { "posts._id": new ObjectID(req.params.id), "posts.student_id": req._id },
       {
         $set: {
-          "posts.$.status": req.body.status,
+          "posts.$.currentCourse": req.body.currentCourse,
           "posts.$.desiredCourse": req.body.desiredCourse,
           "posts.$.message": req.body.message,
         },
