@@ -11,7 +11,6 @@ const coursesRouter = require('./routes/courses');
 const authenticRouter = require('./routes/authentication');
 const authorization = require('./middleware/authorization');
 
-const test = 0;
 const MongoClient = require('mongodb').MongoClient;
 
 const url = process.env.URL;
